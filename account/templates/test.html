@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   </head>
+<body>
+    <h1 class="bg-success">Test Page</h1>
+    <p>{{data}}</p>
+    {% if list_name%}
+        <p>{{list_name}}</p>
+        <h2>For tag</h2>
+        {% for i in list_name %}
+            <p>{{i}}</p>
+
+        {% endfor %}
+    {%else%}
+        <h2>No data available</h2>
+    {% endif %}
+
+
+</body>
+</html>
+    
